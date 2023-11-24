@@ -10,6 +10,7 @@ export default function Home() {
   const contentRef = useRef(null);
   const [activeSection, setActiveSection] = useState('');
   const [show, setShow] = useState(false);
+
   useEffect(() => {
     if (show) {
       const sectionContent = contentRef.current?.querySelectorAll('main section');
@@ -17,7 +18,8 @@ export default function Home() {
 
       const handleScroll = () => {
         sectionContent.forEach((sec) => {
-          let top = contentRef.current.scrollTop;
+          // let top = contentRef.current.scrollTop;
+          let top = document.documentElement.scrollTop;
           let scrollHeight = sec.offsetHeight;
           let scrollTop = sec.offsetTop - 100;
           let id = sec.getAttribute('id');
@@ -30,10 +32,10 @@ export default function Home() {
           }
         });
       };
-      contentRef.current.addEventListener('scroll', handleScroll);
+      window.addEventListener('scroll', handleScroll);
 
       return () => {
-        contentRef.current.removeEventListener('scroll', handleScroll);
+        window.current.removeEventListener('scroll', handleScroll);
       };
     }
   }, [contentRef, show]);
@@ -48,7 +50,7 @@ export default function Home() {
         <>
           <Navbar />
           <Content contentRef={contentRef} />
-          <Image src="/hi-robot.gif" alt="robot" width={100} height={100}  className="w-20 h-20  max-sm:fixed max-lg:fixed max-lg:top-9 max-lg:right-2 max-sm:top-9 max-sm:right-2 lg:right-0 lg:bottom-0 " />
+          <Image src="/hi-robot.gif" alt="robot" width={100} height={100} className="w-20 h-20  max-sm:fixed max-lg:fixed max-lg:top-9 max-lg:right-2 max-sm:top-9 max-sm:right-2 lg:right-0 lg:bottom-0 " />
         </>
       ) : (
         <>
