@@ -1,5 +1,7 @@
 import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Link from 'next/link';
 import React from 'react';
 
 const Navbar = () => {
@@ -10,9 +12,9 @@ const Navbar = () => {
       <p id="prag" className="border-b-4 py-3 mb-2">
         Hello, I am a Web Developer who explains the Web with Javascript.
       </p>
-      <a className=" hover:border-b-2" href="https://drive.google.com/file/d/1aMPjSS20Tf9XwvAiBcaeUCDopwOfHNQ9/view?usp=sharing">
-        View Resume <i className="fa-solid fa-link fa-bounce"></i>
-      </a>
+      <Link className="opacity-100 hover:border-b-2" href="https://drive.google.com/file/d/1aMPjSS20Tf9XwvAiBcaeUCDopwOfHNQ9/view?usp=sharing">
+        View Resume <FontAwesomeIcon icon={faLink} bounce />
+      </Link>
       <section className="mt-28 hidden lg:block">
         <ul className="nav">
           <li className="p-2 text-lg  w-max">
@@ -35,19 +37,19 @@ const Navbar = () => {
       <section className="lg:mt-32 max-sm:mt-8">
         <ul className="sosmed flex max-lg:mt-5">
           <li className="pr-5 ">
-            <a href="https://wa.me/6285273415295">
-              <FontAwesomeIcon icon={faWhatsapp} className="max-sm:text-2xl max-lg:text-3xl lg:text-4xl opacity-50 hover:opacity-100" />
-            </a>
+            <Link href="https://wa.me/6285273415295" className='opacity-50  hover:opacity-100'>
+              <FontAwesomeIcon icon={faWhatsapp} className="max-sm:text-2xl  max-lg:text-3xl lg:text-4xl" />
+            </Link>
           </li>
           <li className="pr-5 ">
-            <a href="https://github.com/Abelakmal">
-              <FontAwesomeIcon icon={faGithub} className="max-sm:text-2xl max-lg:text-3xl lg:text-4xl opacity-50 hover:opacity-100" />
-            </a>
+            <Link href="https://github.com/Abelakmal" className='opacity-50 hover:opacity-100'>
+              <FontAwesomeIcon icon={faGithub} className="max-sm:text-2xl max-lg:text-3xl text lg:text-4xl " />
+            </Link>
           </li>
           <li className="pr-5 ">
-            <a href="#">
-              <FontAwesomeIcon icon={faLinkedin} className="max-sm:text-2xl max-lg:text-3xl lg:text-4xl opacity-50 hover:opacity-100" />
-            </a>
+            <Link href="#" className='opacity-50 hover:opacity-100'>
+              <FontAwesomeIcon icon={faLinkedin} className="max-sm:text-2xl max-lg:text-3xl lg:text-4xl " />
+            </Link>
           </li>
         </ul>
       </section>
