@@ -5,8 +5,9 @@ import { Project } from './Project';
 import Footer from './Footer';
 
 const Content = ({ contentRef }) => {
+
   return (
-    <header id="content" ref={contentRef} className="lg:w-1/2 h-screen lg:overflow-y-scroll   scroll-smooth">
+    <header id="content" ref={contentRef} className="lg:w-1/2 h-screen lg:overflow-y-scroll  scroll-smooth">
       <About />
       <Skill />
       <Project />
