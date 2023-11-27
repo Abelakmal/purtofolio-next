@@ -37,17 +37,17 @@ const Navbar = () => {
       <section className="lg:mt-32 max-sm:mt-8">
         <ul className="sosmed flex max-lg:mt-5">
           <li className="pr-5 ">
-            <Link href="https://wa.me/6285273415295" className='opacity-50  hover:opacity-100'>
+            <Link href="https://wa.me/6285273415295" className="opacity-50  hover:opacity-100" aria-label="whatsapp">
               <FontAwesomeIcon icon={faWhatsapp} className="max-sm:text-2xl  max-lg:text-3xl lg:text-4xl" />
             </Link>
           </li>
           <li className="pr-5 ">
-            <Link href="https://github.com/Abelakmal" className='opacity-50 hover:opacity-100'>
+            <Link href="https://github.com/Abelakmal" className="opacity-50 hover:opacity-100" aria-label="github">
               <FontAwesomeIcon icon={faGithub} className="max-sm:text-2xl max-lg:text-3xl text lg:text-4xl " />
             </Link>
           </li>
           <li className="pr-5 ">
-            <Link href="#" className='opacity-50 hover:opacity-100'>
+            <Link href="#" className="opacity-50 hover:opacity-100" aria-label="linkedin">
               <FontAwesomeIcon icon={faLinkedin} className="max-sm:text-2xl max-lg:text-3xl lg:text-4xl " />
             </Link>
           </li>

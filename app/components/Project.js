@@ -14,10 +14,10 @@ export const Project = () => {
             </h2>
             <Image src="/figting.jpg" alt="game figting" height="60" width="80" />
             <p className="mb-4">Mengembangkan game figting web dengan menerapakan canvas dan class javascript dengan pergerakan Caracter game yang smooth</p>
-            <ul className="teknologi">
-              <span className="bg-green-400 text-black p-1 rounded m-2">Javascript</span>
-              <span className="bg-green-400 text-black p-1 rounded m-2">Canvas</span>
-              <span className="bg-green-400 text-black p-1 rounded m-2">Game</span>
+            <ul className="flex">
+              <li className="bg-green-400 text-black p-1 rounded m-2">Javascript</li>
+              <li className="bg-green-400 text-black p-1 rounded m-2">Canvas</li>
+              <li className="bg-green-400 text-black p-1 rounded m-2">Game</li>
             </ul>
           </a>
         </li>
@@ -28,10 +28,10 @@ export const Project = () => {
             </h2>
             <Image src="/ig-clone.png" alt="clone instagram" height="60" width="80" />
             <p className="mb-4">Membuat clone web instagram dengan React js dengan clone bagian home dari Instagram</p>
-            <ul className="teknologi">
-              <span className="bg-green-400 text-black p-1 rounded m-2">ReactJs</span>
-              <span className="bg-green-400 text-black p-1 rounded m-2">Javascript</span>
-              <span className="bg-green-400 text-black p-1 rounded m-2">MediaSosial</span>
+            <ul className="flex">
+              <li className="bg-green-400 text-black p-1 rounded m-2">ReactJs</li>
+              <li className="bg-green-400 text-black p-1 rounded m-2">Javascript</li>
+              <li className="bg-green-400 text-black p-1 rounded m-2">MediaSosial</li>
             </ul>
           </a>
         </li>
@@ -42,10 +42,10 @@ export const Project = () => {
             </h2>
             <Image src="/api.jpg" alt="api" height="60" width="80" />
             <p className="mb-2">Membuat API E-commerce sederhana dengan berbagai fitur untuk interaksi user dan admin</p>
-            <ul className="teknologi">
-              <span className="bg-green-400 text-black p-1 rounded m-2">Java</span>
-              <span className="bg-green-400 text-black p-1 rounded m-2">SpringBoot</span>
-              <span className="bg-green-400 text-black p-1 rounded m-2">Api</span>
+            <ul className="flex">
+              <li className="bg-green-400 text-black p-1 rounded m-2">Java</li>
+              <li className="bg-green-400 text-black p-1 rounded m-2">SpringBoot</li>
+              <li className="bg-green-400 text-black p-1 rounded m-2">Api</li>
             </ul>
           </a>
         </li>
