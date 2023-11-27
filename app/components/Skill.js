@@ -28,13 +28,13 @@ export const Skill = () => {
           <h2 className="text-center mb-12">Back-End</h2>
           <div className="flex items-center flex-col ">
             <i className="flex mb-6">
-              <Image width={100} height={100} src="/spring.png" alt="next-js logo" className="bg-white rounded-full h-12 w-12" /> <span className="text-3xl pt-1 pl-2">Spring Boot</span>
+              <Image width={200} height={200} src="/spring.png" alt="next-js logo" className="bg-white rounded-full h-12 w-12" /> <span className="text-3xl pt-1 pl-2">Spring Boot</span>
             </i>
             <i className="flex mb-6">
-              <Image width={100} height={100} src="/express-js.png" alt="next-js logo" className="w-10 h-9" /> <span className="text-3xl pt-1 pl-2">Express Js</span>
+              <Image width={200} height={200} src="/express-js.png" alt="next-js logo" className="w-10 h-9" /> <span className="text-3xl pt-1 pl-2">Express Js</span>
             </i>
             <i className="flex mb-6">
-              <Image width={100} height={100} src="/postgresql.png" alt="tailwind logo" className="w-12 h-12" />
+              <Image width={200} height={200} src="/postgresql.png" alt="tailwind logo" className="w-12 h-12" />
               <span className="text-3xl pt-1 pl-2">Postgresql</span>
             </i>
           </div>
